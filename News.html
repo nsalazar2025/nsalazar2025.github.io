@@ -1,0 +1,290 @@
+<!-- 
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Handlee&family=Nova+Mono&family=Permanent+Marker&family=Poiret+One&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+        <meta charset="utf-8">
+        <title>More than Just Lines</title>
+        <style>
+            body {
+                width: 1440px;
+                margin-left: auto;
+                margin-right: auto;
+                background-image: url("https://scontent.xx.fbcdn.net/v/t1.15752-9/248499291_1615839775444192_5781181612204030634_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeH8acYYIj9A0fbJfdaTHk5QNChByU4eSos0KEHJTh5KiyzqXk7wTHrP7bT6El_V3x2rOsuRYoHbqa7ZSry3u5dI&_nc_ohc=BDF-CvompfsAX_tBnaM&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=0c67a756e0374781aeab4bcf9e0a0b7e&oe=61A7ED25");
+            }
+
+            ul{
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                overflow: auto;
+                background-color:#991f00;
+            }
+            
+            li {
+                float: left;
+            }
+               
+            li a {
+                display:block;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                text-decoration: none;
+                font-family: 'Nova Mono', monospace;
+                font-size: 16px;
+               
+            }
+
+            li a:hover{
+                background-color:#ff471a;
+                text-decoration: underline;
+            } 
+        
+
+            #sub{
+                color:#991f00;
+               background-image:url("https://scontent.xx.fbcdn.net/v/t1.15752-9/248499291_1615839775444192_5781181612204030634_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeH8acYYIj9A0fbJfdaTHk5QNChByU4eSos0KEHJTh5KiyzqXk7wTHrP7bT6El_V3x2rOsuRYoHbqa7ZSry3u5dI&_nc_ohc=BDF-CvompfsAX_tBnaM&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=0c67a756e0374781aeab4bcf9e0a0b7e&oe=61A7ED25");
+               padding-bottom: 10px;
+               padding-top: 10px;
+               margin: 0px;
+               text-align: center;
+               font-family: 'Poiret One', cursive;
+               font-size:32px;
+               text-decoration: overline; 
+            }
+
+         
+            
+             
+            #square1{
+                width:460px;
+                height:470px;
+                margin: 10px;
+                background-color: #991f00;
+                float:left;
+                text-align: center;
+               font-family: 'Handlee', cursive;
+            
+            }
+            
+            .image1 {
+                 display: block;
+                 margin-left: 137.5px;
+                 margin-right: 97.5px;
+                 margin-top: 10px;
+                 width: 170px;
+                 height: 230px;
+                 padding-top: 10px;
+            }
+            
+            #t1 {
+               text-align: justify;
+                font-size:13px;
+                margin:10px;
+                font-family: 'Varela Round', sans-serif;
+              
+          }
+            
+            #square2{
+                width:460px;
+                height:470px;
+                margin: 10px;
+                background-color: #ffeee6;
+                float:left;
+                text-align: center;
+                font-family: 'Handlee', cursive;
+                color:#991f00;
+            }
+            
+            .image2 {
+                display: block;
+                 margin-left: 117.5px;
+                 margin-right: 117.5px;
+                 width: auto;
+                 height: auto;
+            }
+            
+            #square3{
+                width:460px;
+                height:470px;
+                margin: 10px;
+                background-color: #ffd480;
+                float:left;
+                text-align: center;
+                font-family: 'Handlee', cursive;
+                 color:#194d32;
+             
+            }
+          .image3 {
+              display: block;
+                 margin-left: 137.5px;
+                 margin-right: 97.5px;
+                 width: 170px;
+                 height: 230px;
+                 padding-top: 10px;
+          }
+          
+            
+          #square4{
+                width:460px;
+                height:470px;
+                margin: 10px;
+                background-color: #ffeee6;
+                float:left;
+                text-align: center;
+                font-family: 'Handlee', cursive;
+                color:#991f00;
+            }
+            
+            .image4 {
+                 display: block;
+                 margin-left: 137.5px;
+                 margin-right: 97.5px;
+                 width: 170px;
+                 height: 230px;
+                 padding-top: 10px;
+            }
+            
+            
+            
+            #square5{
+                 width:460px;
+                height:470px;
+                margin: 10px;
+                background-color: #ffd480;
+                float:left;
+                text-align: center;
+                font-family: 'Handlee', cursive;
+                 color:#194d32;
+            }
+            
+            
+            
+
+           
+           
+            #square6{
+                width:460px;
+                height:470px;
+                margin:10px;
+                background-color: #991f00;
+               float:left;
+                 text-align: center;
+                 font-family: 'Handlee', cursive;
+                
+            
+            }
+            
+            .image6 {
+                 display: block;
+                 margin-left: 137.5px;
+                 margin-right: 97.5px;
+                 width: 170px;
+                 height: 230px;
+                 padding-top: 10px
+            }
+              
+            
+           #morenews {
+               width: 720px;
+               margin: 10px;
+               float:left;
+               text-align: justify;
+               font-family: 'Handlee', cursive;
+              
+           }
+
+
+        </style>
+
+            <body>
+
+
+<div id="sub">
+    <h1>more than just lines</h1>
+
+</div>
+
+<div id="nav">
+    <ul>
+        <li><a href ="#">Home</a></li>
+        <li><a href ="#">Weekly Features</a></li>
+        <li><a href ="#">News</a></li>
+        <li><a href ="#">Author's Picks</a></li>
+        <li style="float:right"><a href ="#">About Author</a></li>
+        </ul>
+
+</div>
+
+
+
+<div id="square1">
+    <img src="https://i1.wp.com/anitrendz.net/news/wp-content/uploads/2021/10/Kaguya-sama-Season-3-KV-1.png?resize=1068%2C1511&ssl=1" alt="Love is War" class="image1">
+    <h3>Love is War Season 3 Announcements!</h3>
+    <p style="text-align: justify; margin:10px;  font-family: 'Varela Round', sans-serif;">The official Twitter account for Kaguya-sama: Love is War announced that Season 3 will be released in April 2022. A 9-minute teaser preview trailer was also released with a new key visual. <a href="https://anitrendz.net/news/2021/10/20/kaguya-sama-love-is-war-season-3-release-date-set-for-april-2022/">...Read More</a></p>
+    </div>
+<div id="square2">
+    <h3>SPYXFAMILY IS FINALLY GETTING AN ANIME ADAPTION!!</h3>
+    <iframe src="https://www.youtube.com/embed/izC0E0BPWOM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <div id="t1">
+   <p>Spy x Family, one of the most popular and acclaimed manga of the last several years, is finally getting an anime. CloverWorks Studio and WIT Studio, the studios behind the project, announced the series on Sunday.</p> 
+<p>The adaptation will be a coproduction between CloverWorks Studio and WIT Studio. CloverWorks has had a recent string of success with shows like Promised Neverland, Horimiya, and Rascal Does Not Dream of Bunny Girl Senpai. Meanwhile, WIT Studio has been one of the most highly regarded anime studios of the last decade thanks to things like the first three seasons of Attack on Titan, The Ancient Magus Bride, and Vinland Saga.</p>
+<p>Spy x Family doesn’t have and official release date yet, but is expected to debut sometime in 2022.<a href="https://www.polygon.com/22755955/spy-x-family-anime-trailer-wit-studio-cloverworks">...Read More</a></p>   
+   </div>
+</div>    
+
+<div id="square3">
+    <img src="https://cdn.animenewsnetwork.com/hotlink/thumbnails/fit750x750/cms/news.4/177237/osamaranking_key2.jpg" alt="Ranking of Kings" class="image3">
+    <h3>Ranking of Kings: Beautiful Anime Gem From Wit Studio You Shouldn’t Sleep On</h3>
+    <p style="text-align:justify; margin:10px;  font-family: 'Varela Round', sans-serif;">Ranking of Kings released episode 1, and the new anime from WIT Studio is off to an amazing start! We immediately get a taste of why the show is called that. It’s simple: the world has kingdoms, and there’s a ranking of kings based on their merits. This includes how many prominent knights they have, do they have many subjects and are the towns thriving, as well as the king’s own power. <a href="https://animecorner.me/ranking-of-kings-beautiful-anime-gem-from-wit-studio-you-shouldnt-sleep-on/">...Read More</a></p>
+</div>
+    
+<div id="square4">
+    <p>ANOTHER FAMOUS MANGA CURRENTLY HAVING AN ANIME ADAPTION</p>
+   <img src="https://www.animenewsnetwork.com/hotlink/images/encyc/A24369-848142091.1620791498.jpg" alt="Komi Can't Communicate" class="image4">
+    <h3>KOMI CAN'T COMMUNICATE</h3>
+    
+   <p style="text-align: justify; margin:10px; font-size:13px; font-family: 'Varela Round', sans-serif;">Komi Can't Communicate is arriving with a coming-of-age slice of life romantic comedy shows as the shift in the anime season comes and it remains to be one of the most anticipated series that would be gracing the screens for the fall. Where is it based on, though? Is it from a manga? If so, is it complete, finished, or ongoing? Here is the current status of the series!<a href="https://epicstream.com/article/is-komi-cant-communicate-manga-complete-finished-or-ongoing-here-is-the-current-status-of-the-series">...Read More</a></p>
+
+</div>
+
+
+<div id="square5">
+   <h3>Dr. Stone Season 3 Release Date, Cast And Plot - What We Know So Far</h3>
+    <iframe src="https://www.youtube.com/embed/nIuwUh7PAkY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p style="text-align: justify; margin:10px; font-family: 'Varela Round', sans-serif;">Somewhere out there, Dr. Stone may be the name of someone's podiatrist, but in the world of anime, he's one of the newest heroes to come on the scene and win over fans' hearts. Based off the manga, "Dr. Stone" takes place thousands of years in the future after a mysterious event turned almost all of humanity to stone. Then one day, a genius teenager, Senku, is resurrected. It's not long until his old friend, Taiju, does the same, and together, they work on a way to revive the rest of humanity when they're not busy fending for their lives against the likes of lions and poisonous gases.<a href="https://www.looper.com/403392/dr-stone-season-3-release-date-cast-plot/?utm_campaign=clip">...Read More</a></p>
+</div>
+
+<div id="square6">
+    <img src="https://foto.kontan.co.id/uNAuGtue5FQgcyd6wR6IwaEny58=/smart/2021/06/14/1666072364p.jpg" alt="Jujutsu Kaisen Movie Poster" class="image6">
+    <h3>Jujutsu Kaisen movie: release date, trailer, characters for spin-off film</h3>
+    <p style="text-align:justify; margin:10px;  font-family: 'Varela Round', sans-serif; font-size:14px">Jujutsu Kaisen may only have aired a single 24-episode season, but the popular new anime is already getting a spin-off film.  Titled Jujutsu Kaisen 0, the movie marks a rarity amongst anime films as it will be a prequel directly adapted from the manga – and will focus on a brand new character.  The prequel film will follow Okkotsu, who was oft-mentioned though never seen in the anime, but has now been revealed in a teaser trailer that had garnered well over 6 million views.<a href=" https://www.radiotimes.com/tv/fantasy/jujutsu-kaisen-movie-release-date/">...Read More</a></p>
+</div>
+
+<div id="morenews">
+    <h3>MORE:</h3> 
+    <p><a href="https://www.cbr.com/best-underrated-shojo-anime-2000s/">The Best Underrated Shojo Anime From the 2000s</a></p>
+    <p><a href="https://www.cbr.com/hunter-x-hunter-gon-killua-friendship-questioned-affirmed/">Hunter X Hunter: 5 Times Gon & Killua's Friendship Was Questioned (& 5 It Was Affirmed)</a></p>
+    <p><a href="https://www.cbr.com/my-hero-academia-class-1a-students-age-birthdays/">My Hero Academia: 10 Youngest Class 1-A Students, Ranked By Age</a></p>
+    <p><a href="https://www.cbr.com/attack-on-titan-eren-levi-similar-different/">Attack On Titan: 5 Ways Eren Is Like Levi (& 5 He's Not)</a></p>
+    <p><a href="https://www.cbr.com/dragon-ball-breaks-shonen-cliches-unique/">10 Ways Dragon Ball Breaks Shonen Clichés</a></p>
+    <p><a href="https://comicbook.com/anime/news/jujutsu-kaisen-yuji-middle-school-flashback-manga-spoilers/">!!MANGA SPOILERS!! Jujutsu Kaisen Flashback Reveals Yuji's Early School Days</a></p>
+    <p>Contact the author: nsalazar2025@clc.pshs.edu.ph</p>
+            <p>Copyright &copy; 2020 MTJL</p>
+        </div>
+
+</body>
+
+
