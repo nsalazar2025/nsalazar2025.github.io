@@ -1,0 +1,266 @@
+<!-- 
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=Permanent+Marker&family=Poiret+One&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>More than Just Lines</title>
+        <style>
+            body {
+                width: 1440px;
+                margin-left: auto;
+                margin-right: auto;
+                background-image: url("https://scontent.xx.fbcdn.net/v/t1.15752-9/248499291_1615839775444192_5781181612204030634_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeH8acYYIj9A0fbJfdaTHk5QNChByU4eSos0KEHJTh5KiyzqXk7wTHrP7bT6El_V3x2rOsuRYoHbqa7ZSry3u5dI&_nc_ohc=BDF-CvompfsAX_tBnaM&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=0c67a756e0374781aeab4bcf9e0a0b7e&oe=61A7ED25");
+            }
+
+            ul{
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                overflow: auto;
+                background-color:#991f00;
+            }
+            
+            li {
+                float: left;
+            }
+               
+            li a {
+                display:block;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                text-decoration: none;
+               font-family: 'Nova Mono', monospace;
+                font-size: 16px;
+               
+            }
+
+            li a:hover{
+                background-color:#ff471a;
+                text-decoration: underline;
+            } 
+        
+
+            #sub{
+                color:#991f00;
+               background-image:url("https://scontent.xx.fbcdn.net/v/t1.15752-9/248499291_1615839775444192_5781181612204030634_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeH8acYYIj9A0fbJfdaTHk5QNChByU4eSos0KEHJTh5KiyzqXk7wTHrP7bT6El_V3x2rOsuRYoHbqa7ZSry3u5dI&_nc_ohc=BDF-CvompfsAX_tBnaM&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=0c67a756e0374781aeab4bcf9e0a0b7e&oe=61A7ED25");
+               padding-bottom: 10px;
+               padding-top: 10px;
+               margin: 0px;
+               font-family: 'Poiret One', cursive;
+               text-decoration: overline; 
+               text-align: center;
+               font-size: 32px;
+            }
+
+            
+            
+             
+            #square1{
+                width:460px;
+                height:470px;
+                margin: 10px;
+                background-color: #ffd480;
+                float:left;
+                text-align: center;
+                font-family: 'Shadows Into Light', cursive;
+                font-size:20px;
+                color:#194d32;
+            
+            }
+            
+            .image1 {
+                display: block;
+                 margin-left: 50px;
+                 margin-right: 50px;
+                 width: 360px;
+                 height: 190px;
+                 margin-bottom: 20px;
+            }
+            
+            #square2{
+                width:460px;
+                height:470px;
+                margin: 10px;
+                background-color: #ffeee6;
+                float:left;
+                text-align: center;
+                font-family: 'Permanent Marker', cursive;
+                color:#991f00;
+                
+            }
+            
+            .image2 {
+                display: block;
+                 margin-left: 117.5px;
+                 margin-right: 117.5px;
+                 width: auto;
+                 height: auto;
+            }
+            
+            #square3{
+                width:460px;
+                height:470px;
+                margin: 10px;
+                background-color: #991f00;
+                float:left;
+                text-align: center;
+                color:white;
+                font-family: 'Permanent Marker', cursive;
+                 
+            }
+            
+            .image3 {
+                display: block;
+                 margin-left: 50px;
+                 margin-right: 50px;
+                 width: 360px;
+                 margin-top: 50px;
+                 margin-bottom: 20px;
+            }
+            
+             
+            #square4{
+                width:460px;
+                height:470px;
+                margin:10px;
+                background-image: url("https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.15752-9/250627886_480832116434944_892876508088339541_n.png?_nc_cat=107&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeE-YMG5ZLRlev6IX3kAezGbmX19K3PgrWyZfX0rc-CtbF7KunCZPDHTXJUWiLVkWOgAhFsO8EZBRvX55XDbIv16&_nc_ohc=In_W5QRfEqcAX8qP3pZ&_nc_ht=scontent.fmnl4-6.fna&oh=5b3115b5a13aafb058e88118a6e66377&oe=61A6AC35");
+               float:left;
+                
+            }
+            
+            
+            #square5{
+                width:460px;
+                height:470px;
+                margin: 10px;
+                background-color: #b32400;
+                float:left;
+                background-image: url("https://i.imgur.com/BRIR5ic.jpeg"), url("https://i.pinimg.com/originals/7c/90/f9/7c90f9b69517bacb2207777f84a9985d.jpg");
+                background-repeat: no-repeat;
+                background-position: left top, right bottom;
+                background-size: 230px 235px;
+               text-align: center;
+             
+               font-family: 'Shadows Into Light', cursive;
+
+                
+            }
+            
+            #inside1{
+                background-color: #ffd480;
+                width:230px;
+                height:235px;
+                float:right;
+                color:#194d32;
+            }
+            
+            
+            #inside2{
+                background-color: #991f00;
+                width:230px;
+                height:235px;
+                margin-top:235px; 
+                color:white;
+              
+            }
+            #square6{
+                width:460px;
+                height:470px;
+                margin: 10px;
+                background-image: url("https://scontent.fmnl4-5.fna.fbcdn.net/v/t1.15752-9/251825319_211098834362643_2757127342173819474_n.png?_nc_cat=111&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeFJcbmB07YsIG7PntUmtiGMb77a5yzzODJvvtrnLPM4MnPK2fVNU3FZKyvmh9E6MllBiarl8IA7gW03i_q3KCVP&_nc_ohc=2-PkPgy62b4AX8nKKlr&_nc_ht=scontent.fmnl4-5.fna&oh=95cece1e8beb672fa5b9b03940a750b4&oe=61A88CCB");
+                float:left;
+            }
+            
+            
+          
+        </style>
+
+            <body>
+
+
+<div id="sub">
+    <h1>more than just lines</h1>
+
+</div>
+
+<div id="nav">
+    <ul>
+        <li><a href ="#">Home</a></li>
+        <li><a href ="#">Weekly Features</a></li>
+        <li><a href ="#">News</a></li>
+        <li><a href ="#">Author's Picks</a></li>
+        <li style="float:right"><a href ="#">About Author</a></li>
+        </ul>
+
+</div>
+
+
+
+<div id="square1">
+
+        <h2>BLUE PERIOD RELEASE DATES</h2>
+        <img src="https://releasedate.news/wp-content/uploads/2021/10/Blue-Period-Season-1-What-Date-and-Time-of-Netflix.jpg" alt="blue period" class="image1">
+        <a href="https://animenewsandfacts.com/blue-period-release-schedule-episode-1-13-release-date/">CLICK TO VIEW</a>
+    </div>
+<div id="square2">
+    
+    <h2 style="margin:10px">HAPPY BIRTHDAY BAJI KEISUKE!</h2>
+    <p style="margin:0px">Anime: Tokyo Revengers</p>
+    <img src="https://cdn.myanimelist.net/images/characters/10/387998.jpg" alt="Baji Keisuke" class="image2">
+    <h3 style="margin:0px">NOV 3</h3>
+</div>    
+
+<div id="square3">
+    <img src="https://www.otakutale.com/wp-content/uploads/2021/07/Demon-Slayer-Season-2-Visual-Promotional-Video-Revealed.jpg" alt="Demon Slayer" class="image3">    
+    <h2>DEMON SLAYER S2?</h2>
+    <a href="https://www.gamesradar.com/demon-slayer-season-2-release-date-news-trailer-story-mugen-train-cast/">CLICK HERE TO READ</a>
+    
+</div>
+    
+<div id="square4">
+</div>
+
+<div id="square5">
+    <div id="inside1">
+        <h2>BELATED HAPPY BIRTHDAY TO</h2>
+        <h3>TOGE INUMAKI</h3>
+        <h3>OCT 23</h3>
+        <p>Anime:Jujutsu Kaisen</p>
+        </div>
+ <div id="inside2">
+         <h3>&</h3>
+         <h3>KENMA KOZUME</h3> 
+        <h3>OCT 16</h3>
+        <p>Anime: Haikyuu</p>
+        </div>
+
+</div>
+
+<div id="square6">
+    
+
+</div>
+
+<div id="footer">
+    <p>Contact the author: nsalazar2025@clc.pshs.edu.ph</p>
+            <p>Copyright &copy; 2020 MTJL</p>
+        </div>
+
+
+
+
+</body>
+
+
