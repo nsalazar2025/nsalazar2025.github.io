@@ -1,0 +1,334 @@
+<!-- 
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Handlee&family=Nova+Mono&family=Permanent+Marker&family=Poiret+One&family=Shadows+Into+Light&family=Varela+Round&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>More than Just Lines</title>
+        <style>
+            body {
+                width: 1440px;
+                margin-left: auto;
+                margin-right: auto;
+                background-image: url("https://scontent.xx.fbcdn.net/v/t1.15752-9/248499291_1615839775444192_5781181612204030634_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeH8acYYIj9A0fbJfdaTHk5QNChByU4eSos0KEHJTh5KiyzqXk7wTHrP7bT6El_V3x2rOsuRYoHbqa7ZSry3u5dI&_nc_ohc=BDF-CvompfsAX_tBnaM&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=0c67a756e0374781aeab4bcf9e0a0b7e&oe=61A7ED25");
+            }
+
+            ul{
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                overflow: auto;
+                background-color:#991f00;
+            }
+            
+            li {
+                float: left;
+            }
+               
+            li a {
+                display:block;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                text-decoration: none;
+                font-family: 'Nova Mono', monospace;
+                font-size: 16px;
+               
+            }
+
+            li a:hover{
+                background-color:#ff471a;
+                text-decoration: underline;
+            } 
+        
+
+            #sub{
+                color:#991f00;
+               background-image:url("https://scontent.xx.fbcdn.net/v/t1.15752-9/248499291_1615839775444192_5781181612204030634_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeH8acYYIj9A0fbJfdaTHk5QNChByU4eSos0KEHJTh5KiyzqXk7wTHrP7bT6El_V3x2rOsuRYoHbqa7ZSry3u5dI&_nc_ohc=BDF-CvompfsAX_tBnaM&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=0c67a756e0374781aeab4bcf9e0a0b7e&oe=61A7ED25");
+               padding-bottom: 10px;
+               padding-top: 10px;
+               margin: 0px;
+               font-family: 'Poiret One', cursive;
+               text-decoration: overline; 
+               text-align: center;
+               font-size: 32px;
+            }
+
+            #content{
+                
+                color: black;
+                 font-family: 'Poiret One', cursive;
+                 text-align: center;
+                 font-size:20px;
+
+            }
+            
+             
+            #square1{
+                width:460px;
+                height:470px;
+                margin: 10px;
+                background-color: #991f00;
+                
+                float:left;
+                 text-align: center;
+                font-family: 'Handlee', cursive;
+                
+            
+            }
+            
+            .image1 {
+                 display: block;
+                 margin-left: 137.5px;
+                 margin-right: 97.5px;
+                 width: 170px;
+                 height: 230px;
+                 padding-top: 10px;
+            }
+            
+            #t1{
+                 text-align: justify;
+                font-size:12px;
+                margin:10px;
+                font-family: 'Varela Round', sans-serif;
+                              
+            }
+            
+            #square2{
+                width:460px;
+                height:470px;
+                margin: 10px;
+                background-color: #ffd480;
+                color:#194d32;
+
+                float:left;
+                text-align: center;
+                font-family: 'Handlee', cursive;
+                
+            }
+            
+            
+            
+            #t2{
+                font-size: 12px;
+                text-align: justify;
+                margin:10px;
+                font-family: 'Varela Round', sans-serif;
+            }
+            
+            #square3{
+                width:460px;
+                height:470px;
+                margin: 10px;
+                background-color:#ffeee6; 
+                float:left;
+                text-align: center;
+             font-family: 'Handlee', cursive;
+             color:#991f00;
+            }
+            
+            .image3 {
+                display: block;
+                margin-left: 137.5px;
+                 margin-right: 97.5px;
+                 width: 170px;
+                 height: 230px;
+                 padding-top: 10px;
+                }
+             #t3 {
+                  text-align: justify;
+                font-size:11px;
+                margin:10px;
+                font-family: 'Varela Round', sans-serif;
+                
+              
+             }
+             
+            #square4{
+                width:460px;
+                height:470px;
+                margin: 10px;
+                background-color: #ffd480;
+                float:left;
+                 text-align: center;
+                 font-family: 'Handlee', cursive;
+            color:#194d32;
+
+            }
+            
+            .image4 {
+                 display: block;
+                 margin-left: 137.5px;
+                 margin-right: 97.5px;
+                 width: 170px;
+                 height: 230px;
+                 padding-top: 10px;
+            }
+            
+            #t4 {
+                font-size: 12px;
+                text-align: justify;
+                margin:10px;
+                font-family: 'Varela Round', sans-serif;
+            }
+            
+            
+            #square5{
+                 width:460px;
+                height:470px;
+                margin: 10px;
+                background-color: #ffeee6;
+                float:left;
+                text-align: center;
+                font-family: 'Handlee', cursive;
+                color:#991f00;
+            }
+            
+            
+            
+            #t5{
+                font-size: 13px;
+                text-align: justify;
+                margin:10px;
+                font-family: 'Varela Round', sans-serif;
+            }
+            
+            
+          
+            #square6{
+                width:460px;
+                height:470px;
+                margin: 10px;
+                background-color: #991f00;
+                float:left;
+                text-align: center;
+            font-family: 'Handlee', cursive;
+            }
+            
+            .image6 {
+                display: block;
+                 margin-left: 50px;
+                 margin-right: 50px;
+                 width: 360px;
+                 height: 190px;
+                 margin-top: 50px;
+                 margin-bottom: 20px;
+            }
+            
+            #t6{
+                font-size: 12px;
+                text-align: justify;
+                margin:10px;
+                font-family: 'Varela Round', sans-serif;
+            }
+            
+          
+
+
+        </style>
+
+            <body>
+
+
+<div id="sub">
+    <h1>more than just lines</h1>
+
+</div>
+
+<div id="nav">
+    <ul>
+        <li><a href ="#">Home</a></li>
+        <li><a href ="#">Weekly Features</a></li>
+        <li><a href ="#">News</a></li>
+        <li><a href ="#">Author's Picks</a></li>
+        <li style="float:right"><a href ="#">About Author</a></li>
+
+     </ul>
+
+</div>
+
+
+<div id="content">
+    <h1>Author's Recommendations:</h1>
+</div>
+<div id="square1">
+
+        
+        <img src="https://m.media-amazon.com/images/M/MV5BZGM4NjE1OWYtNzcwMC00ZGY0LWE4NjEtZTgzYzY4YWU5M2E3XkEyXkFqcGdeQXVyMzI2Mjc1NjQ@._V1_.jpg" alt="Tower of God" class="image1">
+        
+        <h3>TOWER OF GOD</h3>
+        
+        <p><b>Genre:</b> Action fiction, Dark fantasy (Series)<p>
+            <div id="t1">
+        <p><b>Author’s Review:</b> Before anything else, let me just say that the plot of this anime is outstanding, jaw dropping, I can’t really express it.  I felt so many mixed feelings watching this anime and I am in love with the characters as they all have distinct personalities that contributed to the build-up of the plot.  This series is actually an anime adaption of a webtoon and after finishing the anime, its cliffhanger at the last episode was soooo good that I couldn’t wait for season 2, and read the webtoon immediately.  It’s a great show for people who like battles of strength to deem who is “worthy”.</p>
+</div>
+    </div>
+    
+<div id="square2">
+    
+    <h2>GIVEN</h2>
+    <p><b>Genre:</b> Drama, Romance, Boy’s Love ++ music, very emotional (Series)</p>
+    <div id="t2">
+    <p><b>Author’s Review:</b>  One word.  Pain.  No, but seriously, I cried so much watching this anime, I got very emotional in a lot of scenes.  The romance here revolves around two boys and I love them both so much, I really enjoyed their cute interactions with each other, which made up for the sad moments.  All of the characters’ personalities are really well-written and are realistic, given that they’ve gone through a lot.  PLUS THE SOUNDTRACK IS IMMACULATE,, I always cry to this one song, it’s so good but so sad at the same time it hurts.  Here’s the youtube video of the song (you can choose not to play the vid if you don't want to get spoiled!!!) if you haven’t watched the series yet then it go watch it now!!  There’s actually a movie sequel that released around last year though I haven’t watched it yet, my friend said that it was really good!!</p>
+    </div>
+    <iframe src="https://www.youtube.com/embed/oF2i80m_jwA?start=6" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>    
+
+<div id="square3">
+    <img src="https://i.pinimg.com/236x/52/fd/1a/52fd1a0f6b5366ac10b4bf5584450c49.jpg" alt="Classroom of the Elite" class="image3">    
+   <h2>CLASSROOM OF THE ELITE</h2>
+   <p><b>Genre:</b> Psychological thriller (Series)</p>
+   <div id="t3">
+   <p><b>Author’s Review:</b> This was one of the animes that really hooked me as the plot was so well-written.  The main character of the anime is the calculative-emotionless type.  But, this is definitely an amazing anime that showcases mind games as the main character is manipulative and has the mind to think of plans and connect situations, he just amazed me so much.  If you like intelligent main characters who are overpowered because of their strategies instead of physical strength, then this is the anime for you!  ++sadly there won’t be a season 2 because the anime only served as a promotion for the story’s novel (which I’m planning to read soon)</p> 
+    </div>
+    
+</div>
+    
+<div id="square4">
+    <img src="https://ae01.alicdn.com/kf/H48f0c03e97a84f718b3e07a873f6f5d0r/Hot-Japan-Anime-A-Silent-Voice-Koe-no-Katachi-Art-Film-Print-Silk-Poster-Home-Wall.jpg" alt="A Silent Voice" class="image4">
+    <h2>A SILENT VOICE</h2>
+    <p><b>Genre:</b> Romance, Drama (Movie)</p>
+    <div id="t4">
+    <p><b>Author’s Review:</b> This is honestly a very emotional anime movie, but I can say that this is one of my favorites.  One of the main characters of the movie has impaired hearing, and since it tackles real life situations, the overall impact of the movie is really deep, and heavy in the feelings.  I don’t remember crying that hard to this movie, but I do remember how painful it was finishing the movie, I’m pretty sure it took me weeks to recover from the emotional impact T-T But it’s an amazing movie and I highly recommend it!!</p>
+   
+</div>
+</div>
+
+<div id="square5">
+    <h2>KONO OTO TOMARE</h2>
+    <p><b>Genre:</b> Music, Slice of Life (Series)</p>
+    <div id="t5">
+    <p><b>Author’s Review:</b> LOVED THIS SMMM I really feel like this is a really underrated show.  IT’S SO GOOD AND IT DESERVES MORE ATTENTIONNN The anime is centered on music, specifically playing the koto (a Japanese instrument), and it’s so fun watching the characters improve themselves in playing the koto.  I also like how it tackles real life problems that people face, especially in the manga.  The character development in the anime is also amazingly written!!!  Please watch this you won’t regret it!! (Here is the youtube video of one of their performances if you want to listen hehehe)</p>
+    </div>
+     <iframe src="https://www.youtube.com/embed/FbeqPgjQ83U" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div id="square6">
+    <img src="https://cdn.readdetectiveconan.com/file/mangap/5168/10050000/2.jpeg" alt="Tougen Anki" class="image6">
+    <h2>TOUGEN ANKI</h2>
+    <p><b>Genre:</b> Action, Fantasy, Shounen, Supernatural (Manga)</p>
+    <div id="t6">
+    <p><b>Author’s Review:</b> This manga is currently one of my favorites because the characters are good-looking!!!  But jokes aside, I was really intrigued by the plot of this manga.  I really like action genres and this definitely did not disappoint.  I love the art style and the concept of the power system in the story.  Since it only has roughly around 60+ chapters, I’m looking forward to more character development and backstories of the characters.  This is a great manga for people who like My Hero Academia and other shounen anime.</p>
+</div>
+
+
+</div>
+<div id="footer">
+    <p>Contact the author: nsalazar2025@clc.pshs.edu.ph</p>
+            <p>Copyright &copy; 2020 MTJL</p>
+        </div>
+
+
+
+</body>
+
